@@ -18,12 +18,9 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-         L00172488-Project-Build
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>5.10.0</version> <!-- Adjusted to the correct JUnit version -->
-
-
+        <version>5.10.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -36,15 +33,6 @@
       <artifactId>junit-jupiter-api</artifactId>
       <scope>test</scope>
     </dependency>
-
-    <!-- Optional: parameterized tests support -->
-    <dependency>
-      <groupId>org.junit.platform</groupId>
-      <artifactId>junit-jupiter-suite</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Optional: JUnit Platform Suite -->
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-suite</artifactId>
@@ -65,7 +53,10 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
+          <version>3.10.0</version>
+          <configuration>
+            <release>19</release>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
