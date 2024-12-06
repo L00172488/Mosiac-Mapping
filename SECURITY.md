@@ -23,8 +23,9 @@ if you discover a security vulnerability, please follow these steps:
 - Affected version(s)
 - Steps to reproduce the vulnerability
 - Any relevant code snippets or logs
+- Any releavnt error messages to 
 
-3. **Expected Response Time**: We aim to respond to all security reports within **2 business day** and provide a resolution or mitigation plan withing **5 business days**.
+3. **Expected Response Time**: We aim to respond to all security reports within **2 - 3 business day** and provide a resolution or mitigation plan withing **5 business days**.
 
 ---
 
