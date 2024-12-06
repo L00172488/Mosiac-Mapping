@@ -10,7 +10,7 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "L00172488-Project-Build" ]
   pull_request:
     branches: [ "main" ]
 
