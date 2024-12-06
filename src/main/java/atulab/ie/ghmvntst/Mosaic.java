@@ -71,5 +71,16 @@ public class Mosaic {
 		this.mosaicCompleted = mosaicCompleted;
 	}
 
+	@Override
+	public String toString() {
+	    if (mosaicCompleted) {
+	        return name + " map is completed.";
+	    } else {
+	        return name + " map is not completed yet, " + neededItems + " shards remaining.";
+	    }
+	}
+	
+	
+
 
 }
