@@ -76,24 +76,27 @@ public class MosaicTest {
         assertTrue(isCompleted, "Mosaic should be marked as completed"); // check that the mosaic is marked as completed
     }
 	
-    public void testToString() {
-        Mosaic mosaic = new Mosaic("Forest Mosaic", 3); // create mosaic with parameters
-        String result = mosaic.toString(); // call the toString method
-        
-        // The expected output for an incomplete mosaic with 3 shards remaining
-        String expected = "Forest Mosaic mosaic shard is not completed yet, 3 shards remaining.";
-        
-        assertEquals(expected, result, "toString method should display correct status for an incomplete mosaic");
-        
-        // Now let's complete the mosaic and check the updated status
-        mosaic.setMosaicCompleted(true); // set mosaic as completed
-        String resultCompleted = mosaic.toString(); // call the toString method again
-        
-        // Expected output for a completed mosaic
-        String expectedCompleted = "Forest Mosaic mosaic shard is completed.";
-        
-        assertEquals(expectedCompleted, resultCompleted, "toString method should display correct status for a completed mosaic");
-    }
-
+	/**
+	 * Test method for {@link atulab.ie.ghmvntst.Mosaic#setMosaicCompleted(boolean)}.
+	 */
+	@Test
+	public void testToString() {
+	    Mosaic mosaic = new Mosaic("Forest Mosaic", 3); // create mosaic with parameters
+	    String result = mosaic.toString(); // call the toString method
+	    
+	    // The expected output for an incomplete mosaic with 3 shards remaining
+	    String expected = "Forest Mosaic map is not completed yet, 3 shards remaining.";
+	    
+	    assertEquals(expected, result, "toString method should display correct status for an incomplete mosaic");
+	    
+	    // Now let's complete the mosaic and check the updated status
+	    mosaic.setMosaicCompleted(true); // set mosaic as completed
+	    String resultCompleted = mosaic.toString(); // call the toString method again
+	    
+	    // Expected output for a completed mosaic
+	    String expectedCompleted = "Forest Mosaic map is completed.";
+	    
+	    assertEquals(expectedCompleted, resultCompleted, "toString method should display correct status for a completed mosaic");
+	}
 
 }
