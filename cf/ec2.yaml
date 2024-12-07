@@ -1,0 +1,10 @@
+Resources:
+    MyInstances:
+        Type: AWS::EC2::Instance
+        Properties: 
+            #AvailabilityZone: us-east-1c
+            ImageId: ami-0453ec754f44f9a4a
+            InstanceType: t2.micro
+            Tags:
+                - Key: prac24
+                  Value: project

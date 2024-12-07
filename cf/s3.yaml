@@ -1,0 +1,10 @@
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+
+    Properties:
+    AccessControl: PublicRead
+    BucketName: "projectdev1"
+    Tags:
+      - Key: ProjectDev
+        Value: proj24
